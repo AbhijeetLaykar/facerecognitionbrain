@@ -9,7 +9,7 @@ import Register from './components/Register/Register';
 import Rank from './components/Rank/Rank';
 import Particles from 'react-particles-js';
 
-
+// adding a comment for git testing
 
 const particleOptions = {
       particles: {
