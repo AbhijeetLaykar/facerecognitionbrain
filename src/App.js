@@ -86,7 +86,7 @@ onInputChange = (event) => {
 
 onButtonSubmit = () => {
   this.setState({imageUrl: this.state.input});
-  fetch('http://localhost:3000/imageurl', {
+  fetch('https://sleepy-atoll-03557.herokuapp.com/imageurl', {
           method: 'post',
           headers: {'content-type' : 'application/json'},
           body: JSON.stringify({
@@ -98,7 +98,7 @@ onButtonSubmit = () => {
     .then(response =>  {
       if(response) {
         console.log('displaying image from clarify');
-        fetch('http://localhost:3000/image', {
+        fetch('https://sleepy-atoll-03557.herokuapp.com/image', {
           method: 'put',
           headers: {'content-type' : 'application/json'},
           body: JSON.stringify({
